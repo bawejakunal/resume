@@ -1,0 +1,159 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[a4]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+
+\usepackage[sc]{mathpazo}%removed osf
+
+%text formatting
+\usepackage{textcomp}
+
+%package to draw lines
+\usepackage{tikz}
+
+%fancyhdr to change position of page number
+\usepackage{blindtext}
+\usepackage{fancyhdr}
+
+%enumitem to itemize nicely
+\usepackage{enumitem}
+
+% in conjunction with fancyhdr to align page number to bottom right
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead{}
+\fancyfoot{}
+
+% Set your name here
+\def\name{Kunal Baweja}
+
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = blue,
+  pdfauthor = {\name},
+  pdfkeywords = {computer, science, cryptography, engineering, masters, software, systems},
+  pdftitle = {Resume: \name},
+  pdfsubject = {Resume},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={7.5in, 10in},
+  left=0.5in,
+  top=0.5in
+}
+
+% itemseparation
+\setlist[1]{itemsep=2pt,leftmargin=17pt}
+
+% Customize page headers
+\pagestyle{fancy}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+\hfill
+\begin{minipage}{0.4\linewidth}
+    Phone: +1-914-689-5240\\
+    Email: \href{mailto:kunal.baweja@columbia.edu}{kunal.baweja@columbia.edu}
+\end{minipage}
+
+%horizontal line
+\rule{\textwidth}{0.2pt}
+
+\section*{Education}
+\begin{itemize}
+    
+    \item Columbia University in the City of New York, USA {\hfill Sept 2016 - Dec 2017}\\
+    MS in Computer Science
+    
+    \item Birla Institute of Technology \& Science, Pilani K.K. Birla Goa Campus, India {\hfill Aug 2011 - May 2015}\\
+    B.E.(Hons.) in Computer Science, GPA: 7.49/10
+
+\end{itemize}
+
+
+\section*{Employment}
+\begin{itemize}
+    \item \textbf{Digital Centers Teaching Internship, Columbia University} {\hfill Sept 2016 - May 2017}\\
+    - Open for all labs and workshops on Python programming language.
+
+    \item \textbf{Research Internship at TSUNAMi Center, National University of Singapore} {\hfill Jun 2015 - May 2016}\\
+    - Web and systems security, applied cryptography and distributed systems.
+    
+    \item \textbf{Summer Internship at Bentley Systems Inc., India} {\hfill May 2014 - July 2014}\\
+    - Prototype and REST API development for \textit{Bentley Connect Interoperability Services}
+
+    \item \textbf{Summer Internship at Bharat Heavy Electricals Limited, India} {\hfill May 2013 - July 2013}\\
+    - Software Development for \textit{BHEL Online Meeting Management System}
+\end{itemize}
+
+\section*{Publication \& Projects}
+\begin{enumerate}
+
+    \item \textbf{A Secure Sharding Protocol for Open Blockchains [Accepted: CCS-2016]} {\hfill Oct 2016}\\
+    - \textit{ACM Conference on Computer and Communications Security, 2016}\\
+    - Authors: Loi Luu, Viswesh Narayanan, Chaodong Zheng, \textit{Kunal Baweja}, Seth Gilbert, Prateek Saxena
+
+    \item \textbf{Web Application Vulnerability Scanner} {\hfill Jan 2016 - Jun 2016}\\
+    - Active fuzzer to detect SQL injections, RXSS, LFI and RFI vulnerabilities 
+
+    \item \textbf{WeShare: A Coercion Resistant \& Scalable Storage Cloud [Undergraduate Thesis]}{\hfill Jun 2015 - Aug 2015}\\
+    - A Google Chrome Extension to securely share files over cloud storage services.\\
+    - Github: \href{https://github.com/bawejakunal/MyCrest}{https://github.com/bawejakunal/MyCrest}\\
+    - Poster: \href{http://www.ieee-security.org/TC/SP2015/posters/paper\_8.pdf}{http://www.ieee-security.org/TC/SP2015/posters/paper\_8.pdf}
+
+    \item \textbf{A Vnode Level Stackable Encrypted Filesystem [Undergraduate Thesis]}{\hfill Jan 2015 - Mar 2015}\\
+    - 256 bit AES-CTR encryption with address space operations on top of \href{http://wrapfs.filesystems.org/}{WrapFS}\\
+    - Github: \href{https://github.com/bawejakunal/wrapfs-aes}{https://github.com/bawejakunal/wrapfs-aes}
+    
+    \item \textbf{Bentley Connect Interoperability Services (BCIS)}{\hfill May 2014 - July 2014}\\
+    - Developed REST API endpoints and prototypes for BCIS to synchronize data and services\\
+    \hspace*{0.7em}among various stakeholders of an infrastructure development project.
+    
+    \item \textbf{BHEL Online Meeting Management System}{\hfill May 2013 - Jul 2013}\\
+    - Currently used by 2000 employees at \href{https://www.bhelbpl.co.in/bplweb_new/}{Bharat Heavy Electricals Limited, Bhopal}.\\
+    - Salient Features: email reminders, calendar updates, file uploads, employee name search\\
+    - Weblink: \href{https://drive.google.com/file/d/0B4QcfJ1IXQCVczFfTmJTSjdLOGM/view?usp=sharing}{Demo Presentation}
+    
+\end{enumerate}
+
+
+\section*{Certifications \& Technical Skills}
+\begin{itemize}
+    \item \textbf{Coursera.org Certifications}\\
+    - Python For Everybody by University of Michigan (5 course sepcialization) \href{https://www.coursera.org/account/accomplishments/specialization/2B5PCJGZ9WEE}{[Certificate Link]}\\
+    - Machine Learning Foundations: A Case Study Approach by University of Washington \href{https://www.coursera.org/account/accomplishments/certificate/NDVXWMCYKX9N}{[Certificate Link]}
+    
+    \item \textbf{Technical Skills}\\
+    C, C++, Java, Python, JavaScript, MySQL, HTML5, CSS3, ASP .NET/MVC Framework, Django Framework
+\end{itemize}
+
+\end{document}
