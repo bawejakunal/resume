@@ -9,7 +9,7 @@
 % this notice and the above URL in the source code if you choose to
 % redistribute this file.
 
-\documentclass[a4]{article}
+\documentclass{article}
 
 \usepackage{hyperref}
 \usepackage{geometry}
@@ -32,6 +32,9 @@
 
 %enumitem to itemize nicely
 \usepackage{enumitem}
+
+% compact titles
+\usepackage[compact]{titlesec}
 
 % in conjunction with fancyhdr to align page number to bottom right
 \renewcommand{\headrulewidth}{0pt}
@@ -59,6 +62,10 @@
   top=0.5in
 }
 
+%section heading redefine
+\titleformat*{\section}
+        {\rmfamily\mdseries\Large}
+
 % itemseparation
 \setlist[1]{itemsep=2pt,leftmargin=17pt}
 
@@ -66,11 +73,6 @@
 \pagestyle{fancy}
 \markright{\name}
 \thispagestyle{empty}
-
-% Custom section fonts
-\usepackage{sectsty}
-\sectionfont{\rmfamily\mdseries\Large}
-\subsectionfont{\rmfamily\mdseries\itshape\large}
 
 % Don't indent paragraphs.
 \setlength\parindent{0em}
@@ -154,6 +156,13 @@
     
     \item \textbf{Technical Skills}\\
     C, C++, Java, Python, JavaScript, MySQL, HTML5, CSS3, ASP .NET/MVC Framework, Django Framework
+\end{itemize}
+
+\section*{Weblinks}
+\begin{itemize}
+        \setlength{\itemsep 0pt}
+        \item LinkedIn - \href{https://www.linkedin.com/in/kunal-baweja-99b97136}{https://www.linkedin.com/in/kunal-baweja-99b97136}
+        \item Github - \href{https://github.com/bawejakunal}{https://github.com/bawejakunal}
 \end{itemize}
 
 \end{document}

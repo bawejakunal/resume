@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.5)  23 SEP 2016 12:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.5)  30 SEP 2016 00:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -585,48 +585,52 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@inbox=\box37
 \enitdp@description=\count138
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 54.
-
-(/usr/share/texlive/texmf-dist/tex/latex/sectsty/sectsty.sty
-Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
-les
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2016/03/15 v2.10.1 Sectioning titles
+\ttl@box=\box38
+\beforetitleunit=\skip54
+\aftertitleunit=\skip55
+\ttl@plus=\dimen164
+\ttl@minus=\dimen165
+\ttl@toksa=\toks29
+\titlewidth=\dimen166
+\titlewidthlast=\dimen167
+\titlewidthfirst=\dimen168
 )
-
-LaTeX Warning: Unused global option(s):
-    [a4].
+Package hyperref Info: Option `colorlinks' set `true' on input line 57.
 
 (/home/kunal/Documents/resume/kunal-resume.aux)
 \openout1 = `kunal-resume.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 78.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 78.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 80.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 80.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Try loading font information for OT1+pplx on input line 78.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Try loading font information for OT1+pplx on input line 80.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pplx.fd
 File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
 )
-\AtBeginShipoutBox=\box38
-Package hyperref Info: Link coloring ON on input line 78.
+\AtBeginShipoutBox=\box39
+Package hyperref Info: Link coloring ON on input line 80.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -636,9 +640,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count139
 )
-LaTeX Info: Redefining \ref on input line 78.
-LaTeX Info: Redefining \pageref on input line 78.
-LaTeX Info: Redefining \nameref on input line 78.
+LaTeX Info: Redefining \ref on input line 80.
+LaTeX Info: Redefining \pageref on input line 80.
+LaTeX Info: Redefining \nameref on input line 80.
 
 (/home/kunal/Documents/resume/kunal-resume.out)
 (/home/kunal/Documents/resume/kunal-resume.out)
@@ -680,21 +684,21 @@ LaTeX Info: Redefining \nameref on input line 78.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\big@size=\dimen164
+\big@size=\dimen169
 ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count140
-\scratchdimen=\dimen165
-\scratchbox=\box39
+\scratchdimen=\dimen170
+\scratchbox=\box40
 \nofMPsegments=\count141
 \nofMParguments=\count142
-\everyMPshowfont=\toks29
+\everyMPshowfont=\toks30
 \MPscratchCnt=\count143
-\MPscratchDim=\dimen166
+\MPscratchDim=\dimen171
 \MPnumerator=\count144
 \makeMPintoPDFobject=\count145
-\everyMPtoPDFconversion=\toks30
+\everyMPtoPDFconversion=\toks31
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -710,70 +714,68 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 86.
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 88.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 86.
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 88.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 86.
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 88.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 86.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 88.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
-LaTeX Font Info:    Font shape `OT1/pplx/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 91.
-LaTeX Font Info:    Try loading font information for TS1+pplx on input line 94.
+LaTeX Font Info:    Try loading font information for TS1+pplx on input line 96.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1pplx.fd
 File: ts1pplx.fd 2004/09/06 font definitions for TS1/pplx.
 )
 LaTeX Font Info:    Font shape `OT1/pplx/bx/n' in size <10> not available
-(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 105.
+(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 107.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 159.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 159.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 168.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 168.
 
 (/home/kunal/Documents/resume/kunal-resume.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 159.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 159.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 168.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 168.
 Package rerunfilecheck Info: File `kunal-resume.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 159.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 168.
  ) 
 Here is how much of TeX's memory you used:
- 16588 strings out of 493029
- 311315 string characters out of 6136235
- 376539 words of memory out of 5000000
- 19834 multiletter control sequences out of 15000+600000
- 17866 words of font info for 46 fonts, out of 8000000 for 9000
+ 16730 strings out of 493029
+ 312923 string characters out of 6136235
+ 379479 words of memory out of 5000000
+ 19980 multiletter control sequences out of 15000+600000
+ 17380 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,5n,54p,393b,327s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/palatino/uplri8a.pfb>
-Output written on /home/kunal/Documents/resume/kunal-resume.pdf (1 page, 64427 
+Output written on /home/kunal/Documents/resume/kunal-resume.pdf (1 page, 64505 
 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
- 43 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 500000)
+ 48 PDF objects out of 1000 (max. 8388607)
+ 41 compressed objects within 1 object stream
+ 8 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
