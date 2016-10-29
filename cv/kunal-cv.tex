@@ -1,0 +1,231 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+
+\usepackage[sc]{mathpazo}%removed osf
+
+%text formatting
+\usepackage{textcomp}
+
+%package to draw lines
+\usepackage{tikz}
+
+%fancyhdr to change position of page number
+\usepackage{blindtext}
+\usepackage{fancyhdr}
+
+%enumitem to itemize nicely
+\usepackage{enumitem}
+
+% compact titles
+\usepackage[compact]{titlesec}
+
+% in conjunction with fancyhdr to align page number to bottom right
+\renewcommand{\headrulewidth}{0pt}
+% \fancyhead{}
+% \fancyfoot{}
+
+% Set your name here
+\def\name{Kunal Baweja}
+
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = blue,
+  pdfauthor = {\name},
+  pdfkeywords = {computer, science, cryptography, engineering, masters, software, systems},
+  pdftitle = {Resume: \name},
+  pdfsubject = {Resume},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={7.5in, 10in},
+  left=0.5in,
+  top=0.5in
+}
+
+%section heading redefine
+\titleformat*{\section}
+        {\rmfamily\mdseries\Large}
+
+% itemseparation
+\setlist[1]{itemsep=2pt,leftmargin=17pt}
+
+% Customize page headers
+\pagestyle{fancy}
+\thispagestyle{empty}
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+\begin{document}
+
+\begin{center}
+{\huge \name}\\
+515 West, 111th Street. Apt-2F, New York, NY-10025 $|$\hspace{3pt}+1-914-689-5240 $|$\hspace{3pt}\href{mailto:kunal.baweja@columbia.edu}{kunal.baweja@columbia.edu}\\
+\vspace{2pt}
+\href{https://github.com/bawejakunal}{https://github.com/bawejakunal} $|$\hspace{3pt}\href{https://www.linkedin.com/in/kunal-baweja}{https://www.linkedin.com/in/kunal-baweja}
+\end{center}
+
+%horizontal line
+\hrule
+\vspace{5pt}
+
+\section*{Education}
+\begin{itemize}
+    
+    \item \textbf{Columbia University in the City of New York, USA} {\hfill Expected Dec 2017}\\
+    MS in Computer Science
+    
+    \item \textbf{Birla Institute of Technology \& Science, Pilani K.K. Birla Goa Campus, India} {\hfill Aug 2011 - May 2015}\\
+    B.E.(Hons.) in Computer Science, GPA: 7.49/10
+
+\end{itemize}
+
+\section*{Professional Experience}
+\begin{itemize}
+    \item \textbf{Digital Centers Teaching Internship, Columbia University} {\hfill Sept 2016 - Present}\\
+    - Weekly Python programming lectures and workshops, open to everyone.
+
+    \item \textbf{Research Internship at TSUNAMi Center, National University of Singapore} {\hfill June 2015 - May 2016}\\
+    - Web and systems security, applied cryptography and distributed systems.
+    
+    \item \textbf{Summer Internship at Bentley Systems Inc., India} {\hfill May 2014 - July 2014}\\
+    - Prototype and REST API development for \textit{Bentley Connect Interoperability Services}
+
+    \item \textbf{Summer Internship at Bharat Heavy Electricals Limited, India} {\hfill May 2013 - July 2013}\\
+    - Software Development for \textit{BHEL Online Meeting Management System}
+\end{itemize}
+
+\section*{Publication \& Projects}
+
+\begin{enumerate}
+
+    \item \textbf{A Secure Sharding Protocol for Open Blockchains [Accepted: CCS-2016]} {\hfill Oct 2016}\\
+    - \textit{ACM Conference on Computer and Communications Security, 2016}\\
+    - Weblink: \href{http://dl.acm.org/citation.cfm?doid=2976749.2978389}{http://dl.acm.org/citation.cfm?doid=2976749.2978389}\\
+    - Authors: Loi Luu, Viswesh Narayanan, Chaodong Zheng, \textit{Kunal Baweja}, Seth Gilbert, Prateek Saxena
+
+    \item \textbf{WeShare: A Coercion Resistant and Scalable Storage Cloud}{\hfill Jun 2015 - Aug 2015}\\
+    - A Google Chrome Extension to securely share files over cloud storage services.\\
+    - Github: \href{https://github.com/bawejakunal/MyCrest}{https://github.com/bawejakunal/MyCrest}
+    
+    \item \textbf{A Vnode Level Stackable Encrypted Filesystem}{\hfill March 2015}\\
+    - Implemented a local vnode level stackable encrypted filesystem using \href{http://wrapfs.filesystems.org/}{Wrapfs} as a base.\\
+    - Used \textbf{AES 256 bit} cipher in \textbf{CTR} mode for encryption of filesystem contents.\\
+    - Github: \href{https://github.com/bawejakunal/wrapfs-aes}{https://github.com/bawejakunal/wrapfs-aes}
+    
+    \item \textbf{Intercepting Kernel System Calls}{\hfill Jan 2015}\\
+    - Loadable Kernel Module to intercept the open() system call in Linux (self learning project)\\
+    - Github: \href{https://github.com/bawejakunal/Intercept-System-Calls}{https://github.com/bawejakunal/Intercept-System-Calls}
+
+    \item \textbf{Generalised Vector Space Model}{\hfill Nov 2014}\\
+    - Document ranking using GVSM, done as a course project for Information Retrieval Course.\\
+    - Github: \href{https://github.com/bawejakunal/Generalised-Vector-Space-Model}{https://github.com/bawejakunal/Generalised-Vector-Space-Model}
+    
+    \item \textbf{Predicting Telemarketing Call Patterns}{\hfill Oct 2014}\\
+    - C4.5 decision tree algorithm implemented on hadoop framework to predict the marketing call\\
+    \hspace*{0.7em}patterns of a bank offering loans.
+
+    \item \textbf{Bentley Connect Interoperability Services (BCIS)}{\hfill May 2014 - July 2014}\\
+    - Developed REST API endpoints and prototypes for BCIS to synchronize data and services\\
+    \hspace*{0.7em}among various stakeholders of an infrastructure development project.
+    
+    \item \textbf{Symmetric Parallel Computing Cluster for Matrix Multiplication}{\hfill April 2014}\\
+    - Implemented a Beowulf Cluster with 4 nodes to compute product of matrices as a course project.\\
+    - Note: Although we achieved fault tolerance for nodes, the system lacked in scalability goals.
+    
+    \item \textbf{BHEL Online Meeting Management System}{\hfill May 2013 - Jul 2013}\\
+    - Currently used by 2000 employees at \href{https://www.bhelbpl.co.in/bplweb_new/}{Bharat Heavy Electricals Limited, Bhopal}.\\
+    - Salient Features: email reminders, calendar updates, file uploads, employee name search\\
+    - Demo Presentation: \href{https://goo.gl/2g8aAo}{https://goo.gl/2g8aAo}
+    
+    \item \textbf{8-Way Set Associative Cache with FIFO Replacement and Write Back Policy}{\hfill Oct 2013}\\
+    - A verilog implementation of cache as part of the undergraduate subject on Computer Architecture.\\
+    - Github: \href{https://github.com/bawejakunal/Set-Associative-Cache}{https://github.com/bawejakunal/Set-Associative-Cache}
+    
+\end{enumerate}
+
+\section*{Teaching Experience}
+\begin{itemize}
+    \item \textbf{Teaching Assistant for Data Structures and Algorithms (BITS Pilani Goa Campus)}{\hfill Jan 2015 - Apr 2015}\\
+    - The course was conducted for undergraduate students by \href{http://www.bits-pilani.ac.in/goa/rsj/profile}{Mr. Ramprasad Joshi}.
+    
+    \item \textbf{Teaching Assistant for Object Oriented Programming (BITS Pilani Goa Campus)}{\hfill Aug 2014 - Nov 2014}\\
+    - The course was conducted for undergraduate students by \href{http://universe.bits-pilani.ac.in/goa/tsrkp/Profile}{Mr. TSRK Prasad}.
+    
+    \item \textbf{Teaching Assistant for Advanced Computer Organisation (BITS Pilani Goa Campus)}{\hfill Jan 2014 - Apr 2014}\\
+    - The course was conducted for undergraduate students by \href{http://www.bits-pilani.ac.in/goa/lucy/profile}{Dr. Lucy J. Gudino}.
+    
+    \item \textbf{Teaching Assistant for Computer Programming (BITS Pilani Goa Campus)}{\hfill Jan 2014 - Apr 2014}\\
+    - The course was conducted for undergraduate students by \href{http://universe.bits-pilani.ac.in/goa/biju/profile}{Dr. Biju K. Raveendran}.
+\end{itemize}
+
+
+\section*{Certifications, Electives \& Technical Skills}
+\begin{itemize}
+    \item \textbf{Coursera.org Course Certificates}\\
+    \item \textbf{Coursera.org Certifications}\\
+    - Python For Everybody by University of Michigan (5 course specialization) \href{https://www.coursera.org/account/accomplishments/specialization/2B5PCJGZ9WEE}{[Certificate Link]}\\
+    - Machine Learning Foundations: A Case Study Approach by University of Washington \href{https://www.coursera.org/account/accomplishments/certificate/NDVXWMCYKX9N}{[Certificate Link]}
+
+    \item \textbf{Computer Science Elective Courses at Undergraduate Level}\\
+    - Cryptography, Data Storage Technologies \& Networks, Artificial Intelligence, Parallel Computing,\\
+    \hspace*{0.7em}Data Mining, Information Retrieval.
+    
+    \item \textbf{Technical Skills}\\
+    - C, C++, Verilog, Java, Python, JavaScript, Java Server Pages(JSP), MySQL, HTML5,\\
+    \hspace*{0.7em}CSS3, ASP .NET/MVC Framework, Django Framework, Hadoop Framework
+\end{itemize}
+
+\section*{Achievements}
+\begin{itemize}
+
+    \item \textbf{Selected as a delegate to HPAIR 2016 Harvard Conference}{\hfill Feb 2016}\\
+    - Selected as a delegate to \textbf{Entrepreneurship Panel} of \textbf{Harvard Project on Asian and International\\
+    \hspace*{0.7em}Relations Conference 2016}, Harvard 2016.
+    
+    \item \textbf{Selected as a delegate to HPAIR 2014 Conference, Tokyo}{\hfill Aug 2014}\\
+    - Selected as a delegate to \textbf{Technology Panel} of \textbf{Harvard Project on Asian and International\\
+    \hspace*{0.7em}Relations Conference 2014}, Tokyo.
+    
+    \item \textbf{Among Top 10\% students in National Standard Examination in Physics Regional Round}{\hfill 2010, 2011}\\
+    - NSEP is organised every year by \textbf{Indian Association of Physics Teachers(IAPT)} as part of\\
+    \hspace*{0.7em}selection process for \textbf{International Physics Olympiad}.
+
+    \item \textbf{Academic Excellence Scholarship in High School}{\hfill 2009-2011}\\
+    - Awarded 75\% scholarship at The Emerald Heights International School for consecutively two\\
+    \hspace*{0.7em}academic years.
+    
+\end{itemize}
+
+\section*{Extracurricular Activities}
+\begin{itemize}
+    \item \textbf{Photography Club Co-ordinator, BITS Pilani K.K. Birla Goa Campus}{\hfill 2013 - 2014}\\
+    - Photography enthusiast and active member of the students' photography club on campus.
+    
+    \item \textbf{Member, Department of Finance \& Assets Mangement, BITS Pilani K.K. Birla Goa Campus}{\hfill 2011 - 2013}\\
+    - Active member of Department of Finance \& Assets Management, which regulates the finances\\
+    \hspace*{0.7em}of student bodies on campus.
+    
+    \item Swimming, Table Tennis
+\end{itemize}
+
+\end{document}\grid
