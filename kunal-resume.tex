@@ -2,7 +2,6 @@
 
 \usepackage{hyperref}
 \usepackage{geometry}
-
 % Comment the following lines to use the default Computer Modern font
 % instead of the Palatino font provided by the mathpazo package.
 % Remove the 'osf' bit if you don't like the old style figures.
@@ -27,8 +26,6 @@
 
 % in conjunction with fancyhdr to align page number to bottom right
 \renewcommand{\headrulewidth}{0pt}
-% \fancyhead{}
-% \fancyfoot{}
 
 % Set your name here
 \def\name{Kunal Baweja}
@@ -39,21 +36,22 @@
   colorlinks = true,
   urlcolor = blue,
   pdfauthor = {\name},
-  pdfkeywords = {computer, science, cryptography, engineering, masters, software, systems},
+  pdfkeywords = {computer science, engineering, software systems, systems},
   pdftitle = {Resume: \name},
   pdfsubject = {Resume},
   pdfpagemode = UseNone
 }
 
 \geometry{
-  body={7.5in, 10in},
-  left=0.5in,
-  top=0.5in
+    letterpaper,
+    body={7.5in, 10.5in},
+    left=0.5in,
+    top=0.2in
 }
 
 %section heading redefine
 \titleformat*{\section}
-        {\rmfamily\mdseries\Large}
+{\rmfamily\mdseries\Large}
 
 % itemseparation
 \setlist[1]{itemsep=2pt,leftmargin=17pt}
@@ -71,7 +69,7 @@
 % Place name at left
 \begin{center}
 {\huge \name}\\
-515 West, 111th Street. Apt-2F, New York, NY-10025 $|$\hspace{3pt}+1-914-689-5240 $|$\hspace{3pt}\href{mailto:kunal.baweja@columbia.edu}{kunal.baweja@columbia.edu}\\
+515 W, 111th St. Apt-2F, New York, NY-10025 $|$\hspace{3pt}+1-914-689-5240 $|$\hspace{3pt}\href{mailto:kunal.baweja@columbia.edu}{kunal.baweja@columbia.edu}\\
 \vspace{2pt}
 \href{https://github.com/bawejakunal}{https://github.com/bawejakunal} $|$\hspace{3pt}\href{https://www.linkedin.com/in/kunal-baweja}{https://www.linkedin.com/in/kunal-baweja}
 \end{center}
@@ -82,7 +80,7 @@
 
 \section*{Education}
 \begin{itemize}
-    
+
     \item \textbf{Columbia University in the City of New York, USA} {\hfill Expected Dec 2017}\\
     MS in Computer Science, GPA: 4.0/4.0
     
@@ -94,7 +92,10 @@
 
 \section*{Professional Experience}
 \begin{itemize}
-    \item \textbf{Digital Centers Teaching Internship, Columbia University} {\hfill Sept 2016 - Present}\\
+    \item \textbf{Developer Intern, 1010 Data Inc} {\hfill June 2017 - Present}\\
+    - Functional programming in K for columnar database development.
+
+    \item \textbf{Digital Centers Teaching Internship, Columbia University} {\hfill Sept 2016 - May 2017}\\
     - Weekly Python programming lectures and workshops, open to everyone.
 
     \item \textbf{Research Internship at TSUNAMi Center, National University of Singapore} {\hfill June 2015 - May 2016}\\
@@ -110,23 +111,25 @@
 \section*{Selected Projects}
 \begin{enumerate}
 
+    \item \textbf{Coverage Based Fault Injection Fuzzing} {\hfill Jan 2017 - May 2017}\\
+    - Detects security vulnerabilities caused by errors in execution environment of a program.\\
+    - Github: \href{https://github.com/akshaynagpal/cbfi}{https://github.com/akshaynagpal/cbfi}
+
+    \item \textbf{Frame-Seller: Simple demo for an e-commerce platform}{\hfill Jan 2017 - Apr 2017}\\
+    - Extensively used AWS for API development as a course project.\\
+    - Github: \href{https://github.com/bawejakunal/Frame-Seller}{https://github.com/bawejakunal/Frame-Seller}
+
     \item \textbf{Sigma Learn - Class Room Lectures to Student Notes [Columbia ADI Hackathon]} {\hfill Jan 2017}\\
-    - Converts classroom lectures to text transcripts in realtime.\\
-    - Summarises text notes and suggests relevant news articles and YouTube videos.\\
+    - Converts classroom lectures to text transcripts and summary in realtime.\\
     - Weblink: \href{https://devpost.com/software/sigma-learn}{https://devpost.com/software/sigma-learn}
 
     \item \textbf{ParkWizard - Real Time Street Parking Information} {\hfill Dec 2016}\\
-    - Android application to search and crowdsource information of street parking locations, backed by\\
-    \hspace*{0.7em}AWS, Elasticsearch and Google Maps \& Cloud Messaging\\
+    - Android app to search and crowdsource information of street parking locations.\\
     - Github: \href{https://github.com/sas2387/ParkWizard}{https://github.com/sas2387/ParkWizard}
 
-    \item \textbf{A Secure Sharding Protocol for Open Blockchains [Accepted: CCS-2016]} {\hfill Oct 2016}\\
-    - \textit{ACM Conference on Computer and Communications Security, 2016}\\
+    \item \textbf{A Secure Sharding Protocol for Open Blockchains [Accepted: ACM CCS-2016]} {\hfill Oct 2016}\\
     - Weblink: \href{http://dl.acm.org/citation.cfm?doid=2976749.2978389}{http://dl.acm.org/citation.cfm?doid=2976749.2978389}\\
     - Authors: Loi Luu, Viswesh Narayanan, Chaodong Zheng, \textit{Kunal Baweja}, Seth Gilbert, Prateek Saxena
-
-    \item \textbf{Web Application Vulnerability Scanner} {\hfill Jan 2016 - June 2016}\\
-    - Active fuzzer to detect SQL injections, RXSS, Open Redirection, LFI and RFI vulnerabilities 
 
     \item \textbf{WeShare: A Coercion Resistant \& Scalable Storage Cloud [Undergraduate Thesis]}{\hfill June 2015 - Aug 2015}\\
     - A Google Chrome Extension to securely share files over cloud storage services.\\
@@ -137,10 +140,9 @@
     \hspace*{0.7em}among various stakeholders of an infrastructure development project.
     
     \item \textbf{BHEL Online Meeting Management System}{\hfill May 2013 - Jul 2013}\\
-    - Currently used by 2000 employees at \href{https://www.bhelbpl.co.in/bplweb_new/}{Bharat Heavy Electricals Limited, Bhopal}.\\
     - Salient Features: email reminders, calendar updates, file uploads, employee name search\\
     - Demo Presentation: \href{https://goo.gl/2g8aAo}{https://goo.gl/2g8aAo}
-    
+
 \end{enumerate}
 
 
@@ -151,7 +153,7 @@
     - Machine Learning Foundations: A Case Study Approach by University of Washington \href{https://www.coursera.org/account/accomplishments/certificate/NDVXWMCYKX9N}{[Certificate Link]}
     
     \item \textbf{Technical Skills}\\
-    C, Java, Python, JavaScript, SQL, HTML5, CSS3, MVC Frameworks, Django, AWS
+    C, Java, Python, JavaScript, SQL, HTML5, CSS3, MVC Frameworks, Amazon Web Services
 \end{itemize}
 
 \end{document}
