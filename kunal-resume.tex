@@ -51,10 +51,11 @@
 
 %section heading redefine
 \titleformat*{\section}
-{\rmfamily\mdseries\Large}
+{\rmfamily\mdseries\bfseries\large}
 
 % itemseparation
-\setlist[1]{itemsep=2pt,leftmargin=17pt}
+\setlist[itemize]{itemsep=0.5pt,leftmargin=14pt}
+\setlist[enumerate]{itemsep=0.5pt,leftmargin=14pt}
 
 % Customize page headers
 \pagestyle{fancy}
@@ -64,14 +65,16 @@
 % Don't indent paragraphs.
 \setlength\parindent{0em}
 
+% new commands
+\newcommand{\bi}{\vspace{-1mm}\begin{itemize}[align=left,leftmargin=*, labelindent=0pt,labelsep=2pt, label={-}, nosep]}
+\newcommand{\ei}{\end{itemize}}
+
 \begin{document}
 
 % Place name at left
 \begin{center}
 {\huge \name}\\
-69 Tiemann Place, Apt-20, New York, NY-10027 $|$\hspace{3pt}+1-914-689-5240 $|$\hspace{3pt}\href{mailto:kunal.baweja@columbia.edu}{kunal.baweja@columbia.edu}\\
-\vspace{2pt}
-\href{https://github.com/bawejakunal}{https://github.com/bawejakunal} $|$\hspace{3pt}\href{https://www.linkedin.com/in/kunal-baweja}{https://www.linkedin.com/in/kunal-baweja}
+\href{mailto:kunal.baweja@columbia.edu}{kunal.baweja@columbia.edu} $|$\hspace{3pt}\href{https://bawejakunal.github.io}{https://bawejakunal.github.io} $|$\hspace{3pt}+1-914-689-5240
 \end{center}
 
 %horizontal line
@@ -92,68 +95,100 @@
 
 \section*{Professional Experience}
 \begin{itemize}
-    \item \textbf{Developer Intern, 1010 Data Inc} {\hfill June 2017 - Aug 2017}\\
-    - File caching on ephemeral local disk from a public cloud based persistent data storage.
+    \item \textbf{Developer Intern, 1010 Data Inc (Sys-Dev Team)} {\hfill June 2017 - Aug 2017}
+    \bi
+        \item Caching data files on local ephemeral disks from persistent public cloud storage.
+        \item K vector programming, C++ DLL development and cache performance evaluation.
+    \ei
 
-    \item \textbf{Digital Centers Teaching Internship, Columbia University} {\hfill Sept 2016 - May 2017}\\
-    - Weekly Python programming lectures and workshops, open to everyone.
-
-    \item \textbf{Research Internship at TSUNAMi Center, National University of Singapore} {\hfill June 2015 - May 2016}\\
-    - Web and systems security, applied cryptography and distributed systems.
+    \item \textbf{Research Internship at TSUNAMi Center, National University of Singapore} {\hfill June 2015 - May 2016}
+    \bi
+        \item Prototyping and evaluation of research in computer security for web, distributed systems,\\
+        file systems and applied cryptography.
+    \ei
     
-    \item \textbf{Summer Internship at Bentley Systems Inc., India} {\hfill May 2014 - July 2014}\\
-    - Prototype and REST API development for \textit{Bentley Connect Interoperability Services}
+    \item \textbf{Software Developer Intern, Bentley Systems Inc., India} {\hfill May 2014 - July 2014}
+    \bi
+        \item REST API development for \textit{Bentley Connect Interoperability Services}.
+        \item Data sharing among stakeholders and vendors for large scale infrastructure development projects.
+    \ei
 
-    \item \textbf{Summer Internship at Bharat Heavy Electricals Limited, India} {\hfill May 2013 - July 2013}\\
-    - Software Development for \textit{BHEL Online Meeting Management System}
+    \item \textbf{Software Engineering Intern, Bharat Heavy Electricals Limited, India} {\hfill May 2013 - July 2013}
+    \bi
+        \item Developed and released \textit{BHEL Online Meeting Management System} including email reminders,\\
+        file uploads, calendar updates and search.
+    \ei 
 \end{itemize}
 
 \section*{Selected Projects}
 \begin{enumerate}
 
-    \item \textbf{Coverage Based Fault Injection Fuzzing} {\hfill Jan 2017 - May 2017}\\
-    - Detects security vulnerabilities caused by errors in execution environment of a program.\\
-    - Github: \href{https://github.com/akshaynagpal/cbfi}{https://github.com/akshaynagpal/cbfi}
+    \item \textbf{Coverage Based Fault Injection Fuzzing} {\hfill Jan 2017 - May 2017}
+    \bi
+        \item Detects security vulnerabilities caused by errors in execution environment of a program.
+        
+        \item Simulates system call failures and detects vulnerabilities from program response.
+        
+        \item Github: \href{https://github.com/akshaynagpal/cbfi}{https://github.com/akshaynagpal/cbfi}
+    \ei
 
-    \item \textbf{Frame-Seller: Simple demo for an e-commerce platform}{\hfill Jan 2017 - Apr 2017}\\
-    - Extensively used AWS for API development as a course project.\\
-    - Github: \href{https://github.com/bawejakunal/Frame-Seller}{https://github.com/bawejakunal/Frame-Seller}
+    \item \textbf{Frame-Seller: Simple demo for an e-commerce platform}{\hfill Jan 2017 - Apr 2017}
+    \bi
+        \item Photo selling marketplace. Web app and API development using AWS components
+        
+        \item Github: \href{https://github.com/bawejakunal/Frame-Seller}{https://github.com/bawejakunal/Frame-Seller}
+    \ei
 
-    \item \textbf{Sigma Learn - Class Room Lectures to Student Notes [Columbia ADI Hackathon]} {\hfill Jan 2017}\\
-    - Converts classroom lectures to text transcripts and summary in realtime.\\
-    - Weblink: \href{https://devpost.com/software/sigma-learn}{https://devpost.com/software/sigma-learn}
+    \item \textbf{Sigma Learn - Class Room Lectures to Student Notes [Columbia ADI Hackathon]} {\hfill Jan 2017}
+    \bi
+        \item Converts audio lectures to text transcripts and summary in realtime using Aylien and IBM Watson APIs.
+        
+        \item Github: \href{https://github.com/bawejakunal/Sigma-Learn}{https://github.com/bawejakunal/Sigma-Learn}
+    \ei
 
-    \item \textbf{ParkWizard - Real Time Street Parking Information} {\hfill Dec 2016}\\
-    - Android app to search and crowdsource information of street parking locations.\\
-    - Github: \href{https://github.com/sas2387/ParkWizard}{https://github.com/sas2387/ParkWizard}
+    \item \textbf{ParkWizard - Real Time Street Parking Information} {\hfill Dec 2016}
+    \bi
+        \item Rewards based android app to search and crowdsource street parking information, .
+        
+        \item Github: \href{https://github.com/sas2387/ParkWizard}{https://github.com/sas2387/ParkWizard}
+    \ei
 
-    \item \textbf{A Secure Sharding Protocol for Open Blockchains [Accepted: ACM CCS-2016]} {\hfill Oct 2016}\\
-    - Weblink: \href{http://dl.acm.org/citation.cfm?doid=2976749.2978389}{http://dl.acm.org/citation.cfm?doid=2976749.2978389}\\
-    - Authors: Loi Luu, Viswesh Narayanan, Chaodong Zheng, \textit{Kunal Baweja}, Seth Gilbert, Prateek Saxena
+    \item \textbf{A Secure Sharding Protocol for Open Blockchains [Accepted: ACM CCS-2016]} {\hfill Oct 2016}
+    \bi
+        \item Weblink: \href{http://dl.acm.org/citation.cfm?doid=2976749.2978389}{http://dl.acm.org/citation.cfm?doid=2976749.2978389}
+        
+        \item Authors: Loi Luu, Viswesh Narayanan, Chaodong Zheng, \textit{Kunal Baweja}, Seth Gilbert, Prateek Saxena
+    \ei
 
-    \item \textbf{WeShare: A Coercion Resistant \& Scalable Storage Cloud [Undergraduate Thesis]}{\hfill June 2015 - Aug 2015}\\
-    - A Google Chrome Extension to securely share files over cloud storage services.\\
-    - Github: \href{https://github.com/bawejakunal/MyCrest}{https://github.com/bawejakunal/MyCrest}
-    
-    \item \textbf{Bentley Connect Interoperability Services (BCIS)}{\hfill May 2014 - July 2014}\\
-    - Developed REST API endpoints and prototypes for BCIS to synchronize data and services\\
-    \hspace*{0.7em}among various stakeholders of an infrastructure development project.
-    
-    \item \textbf{BHEL Online Meeting Management System}{\hfill May 2013 - Jul 2013}\\
-    - Salient Features: email reminders, calendar updates, file uploads, employee name search\\
-    - Demo Presentation: \href{https://goo.gl/2g8aAo}{https://goo.gl/2g8aAo}
+    \item \textbf{WeShare: A Coercion Resistant and Scalable Storage Cloud}{\hfill Aug 2015}
+    \bi
+        \item A Google Chrome Extension to securely share files over cloud storage services.
+        \item Github: \href{https://github.com/bawejakunal/MyCrest}{https://github.com/bawejakunal/MyCrest}
+    \ei
 
 \end{enumerate}
 
 
 \section*{Certifications \& Technical Skills}
 \begin{itemize}
-    \item \textbf{Coursera.org Certifications}\\
-    - Python For Everybody by University of Michigan (5 course specialization) \href{https://www.coursera.org/account/accomplishments/specialization/2B5PCJGZ9WEE}{[Certificate Link]}\\
-    - Machine Learning Foundations: A Case Study Approach by University of Washington \href{https://www.coursera.org/account/accomplishments/certificate/NDVXWMCYKX9N}{[Certificate Link]}
-    
-    \item \textbf{Technical Skills}\\
-    C, Java, Python, K(vector programming), JavaScript, SQL, HTML5, CSS3, MVC Frameworks, Amazon Web Services
+    \item \textbf{Coursera.org Certifications}
+    \bi
+        \item Python For Everybody by University of Michigan (5 course specialization) \href{https://www.coursera.org/account/accomplishments/specialization/2B5PCJGZ9WEE}{[Certificate Link]}
+
+        \item Machine Learning Foundations: A Case Study Approach by University of Washington \href{https://www.coursera.org/account/accomplishments/certificate/NDVXWMCYKX9N}{[Certificate Link]}
+    \ei
+
+    \item \textbf{Technical Skills}
+    \bi
+        \item C/C++, Java, Python, K(vector programming), JavaScript, HTML5, CSS3
+        \item MVC Frameworks, Distributed Systems, SQL/NoSQL Databases, AWS
+    \ei
+\end{itemize}
+
+\section*{Links}
+\begin{itemize}[nosep]
+    \item Linkedin: \href{https://www.linkedin.com/in/kunal-baweja}{https://www.linkedin.com/in/kunal-baweja}
+    \item Github: \href{https://github.com/bawejakunal}{https://github.com/bawejakunal}
 \end{itemize}
 
 \end{document}
