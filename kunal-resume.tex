@@ -66,7 +66,7 @@
 \setlength\parindent{0em}
 
 % new commands
-\newcommand{\bi}{\vspace{-1mm}\begin{itemize}[align=left,leftmargin=*, labelindent=0pt,labelsep=2pt, label={-}, nosep]}
+\newcommand{\bi}{\vspace{-1mm}\begin{itemize}[align=left,leftmargin=*, rightmargin=80pt, labelindent=0pt,labelsep=2pt, label={-}, nosep]}
 \newcommand{\ei}{\end{itemize}}
 
 \begin{document}
@@ -81,6 +81,7 @@
 \hrule
 \vspace{5pt}
 
+\vspace{-1mm}
 \section*{Education}
 \begin{itemize}
 
@@ -92,99 +93,92 @@
 
 \end{itemize}
 
-
+\vspace{-2mm}
 \section*{Professional Experience}
 \begin{itemize}
-    \item \textbf{Developer Intern, 1010 Data Inc (Sys-Dev Team)} {\hfill June 2017 - Aug 2017}
+    \item \textbf{Developer Intern, 1010 Data Inc (Sys-Dev Team)} {\hfill Jun 2017 - Aug 2017}
     \bi
-        \item Caching data files on local ephemeral disks from persistent public cloud storage.
-        \item K vector programming, C++ DLL development and cache performance evaluation.
+        \item Developed cache prototype for storing database files on local disks from persistent public cloud storage. It enables to start or stop compute nodes on demand in cloud and load data on demand.
+        
+        \item Performance evaluation of C++, Java and Python SDKs of public cloud storage for cache system.
     \ei
 
-    \item \textbf{Research Internship at TSUNAMi Center, National University of Singapore} {\hfill June 2015 - May 2016}
+    \item \textbf{Research Intern at TSUNAMi Center, National University of Singapore} {\hfill Jun 2015 - May 2016}
     \bi
-        \item Prototyping and evaluation of research in computer security for web, distributed systems,\\
-        file systems and applied cryptography.
+        \item Developed and tested prototypes for research projects on secure filesystems, scaling blockchain transaction rates and defending data oriented attacks in linux kernel.
+
+        \item Implemented File Inclusion, SQL Injection and XSS tests for a web vulnerability scanner.
     \ei
     
-    \item \textbf{Software Developer Intern, Bentley Systems Inc., India} {\hfill May 2014 - July 2014}
+    \item \textbf{Software Developer Intern, Bentley Systems Inc., India} {\hfill May 2014 - Jul 2014}
     \bi
-        \item REST API development for \textit{Bentley Connect Interoperability Services}.
-        \item Data sharing among stakeholders and vendors for large scale infrastructure development projects.
+        \item Developed item stock comparison for \textit{Bentley Connect Interoperability Services} API to syncrhonize data among stakeholders and vendors for infrastructure projects.
     \ei
 
-    \item \textbf{Software Engineering Intern, Bharat Heavy Electricals Limited, India} {\hfill May 2013 - July 2013}
+    \item \textbf{Software Engineering Intern, Bharat Heavy Electricals Limited, India} {\hfill May 2013 - Jul 2013}
     \bi
-        \item Developed and released \textit{BHEL Online Meeting Management System} including email reminders,\\
-        file uploads, calendar updates and search.
+        \item Developed and released \textit{Online Meeting Management System}, used by more than 2000 employees to organize paperless office meetings. Features: email reminders, file uploads and name search.
     \ei 
 \end{itemize}
 
+\vspace{-2mm}
 \section*{Selected Projects}
 \begin{enumerate}
 
-    \item \textbf{Coverage Based Fault Injection Fuzzing} {\hfill Jan 2017 - May 2017}
+    \item \textbf{Coverage Based Fault Injection Fuzzing} [\href{https://github.com/akshaynagpal/cbfi}{https://github.com/akshaynagpal/cbfi}] {\hfill Jan 2017 - May 2017}
     \bi
-        \item Detects security vulnerabilities caused by errors in execution environment of a program.
-        
-        \item Simulates system call failures and detects vulnerabilities from program response.
-        
-        \item Github: \href{https://github.com/akshaynagpal/cbfi}{https://github.com/akshaynagpal/cbfi}
+        \item Detects security vulnerabilities caused by errors in execution environment of a program by simulating and permuting system call failures and analyzing program response/crash.
     \ei
 
-    \item \textbf{Frame-Seller: Simple demo for an e-commerce platform}{\hfill Jan 2017 - Apr 2017}
+    \item \textbf{Frame-Seller} [\href{https://github.com/bawejakunal/Frame-Seller}{https://github.com/bawejakunal/Frame-Seller}] {\hfill Jan 2017 - Apr 2017}
     \bi
-        \item Photo selling marketplace. Web app and API development using AWS components
-        
-        \item Github: \href{https://github.com/bawejakunal/Frame-Seller}{https://github.com/bawejakunal/Frame-Seller}
+        \item Cloud based application for selling photographs. Developed and deployed using AWS API Gateway, AWS Lambda, SQS, SNS, Cloudwatch, Swagger and static frontend hosted on AWS S3.
+
+        \item Microservices implemented: email verification, asynchronous order processing and Stripe payments.
     \ei
 
-    \item \textbf{Sigma Learn - Class Room Lectures to Student Notes [Columbia ADI Hackathon]} {\hfill Jan 2017}
+    \item \textbf{Sigma Learn - Lecture to Notes} [\href{https://github.com/bawejakunal/Sigma-Learn}{https://github.com/bawejakunal/Sigma-Learn}] {\hfill Jan 2017}
     \bi
-        \item Converts audio lectures to text transcripts and summary in realtime using Aylien and IBM Watson APIs.
+        \item Converts audio lectures to transcripts and summary in realtime using IBM Watson and Aylien APIs.
         
-        \item Github: \href{https://github.com/bawejakunal/Sigma-Learn}{https://github.com/bawejakunal/Sigma-Learn}
+        \item It can be helpful for students with hearing impairments and/or other physical disabilities.
     \ei
 
-    \item \textbf{ParkWizard - Real Time Street Parking Information} {\hfill Dec 2016}
+    \item \textbf{ParkWizard - Realtime Street Parking Information} [\href{https://github.com/sas2387/ParkWizard}{https://github.com/sas2387/ParkWizard}] {\hfill Dec 2016}
     \bi
-        \item Rewards based android app to search and crowdsource street parking information, .
-        
-        \item Github: \href{https://github.com/sas2387/ParkWizard}{https://github.com/sas2387/ParkWizard}
+        \item Rewards based android app to search and crowdsource street parking information, developed over AWS ElasticBeanstalk, SQS, SNS and Elasticsearch.
     \ei
 
     \item \textbf{A Secure Sharding Protocol for Open Blockchains [Accepted: ACM CCS-2016]} {\hfill Oct 2016}
     \bi
+
+        \item A distributed agreement protocol for committee based blockchains and scaling transaction rates.
+
         \item Weblink: \href{http://dl.acm.org/citation.cfm?doid=2976749.2978389}{http://dl.acm.org/citation.cfm?doid=2976749.2978389}
         
         \item Authors: Loi Luu, Viswesh Narayanan, Chaodong Zheng, \textit{Kunal Baweja}, Seth Gilbert, Prateek Saxena
     \ei
 
-    \item \textbf{WeShare: A Coercion Resistant and Scalable Storage Cloud}{\hfill Aug 2015}
-    \bi
-        \item A Google Chrome Extension to securely share files over public cloud storage services.
-        \item Github: \href{https://github.com/bawejakunal/MyCrest}{https://github.com/bawejakunal/MyCrest}
-    \ei
-
 \end{enumerate}
 
-
+\vspace{-2mm}
 \section*{Certifications \& Technical Skills}
 \begin{itemize}
     \item \textbf{Coursera.org Certifications}
     \bi
         \item Python For Everybody by University of Michigan (5 course specialization) \href{https://www.coursera.org/account/accomplishments/specialization/2B5PCJGZ9WEE}{[Certificate Link]}
 
-        \item Machine Learning Foundations: A Case Study Approach by University of Washington \href{https://www.coursera.org/account/accomplishments/certificate/NDVXWMCYKX9N}{[Certificate Link]}
+        \item Machine Learning Foundations by University of Washington \href{https://www.coursera.org/account/accomplishments/certificate/NDVXWMCYKX9N}{[Certificate Link]}
     \ei
 
     \item \textbf{Technical Skills}
     \bi
         \item C/C++, Java, Python, K(vector programming), JavaScript, HTML5, CSS3
-        \item MVC Frameworks, Distributed Systems, SQL/NoSQL Databases, AWS
+        \item Distributed Systems, SQL/NoSQL Databases, AWS, MVC Frameworks
     \ei
 \end{itemize}
 
+\vspace{-2mm}
 \section*{Links}
 \begin{itemize}[nosep]
     \item Linkedin: \href{https://www.linkedin.com/in/kunal-baweja}{https://www.linkedin.com/in/kunal-baweja}
