@@ -1,0 +1,373 @@
+\documentclass{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+
+\usepackage[sc]{mathpazo}%removed osf
+
+%text formatting
+\usepackage{textcomp}
+
+%package to draw lines
+\usepackage{tikz}
+
+%fancyhdr to change position of page number
+\usepackage{blindtext}
+\usepackage{fancyhdr}
+
+%enumitem to itemize nicely
+\usepackage{enumitem}
+
+% compact titles
+\usepackage[compact]{titlesec}
+
+% in conjunction with fancyhdr to align page number to bottom right
+\renewcommand{\headrulewidth}{0pt}
+
+% Set your name here
+\def\name{Kunal Baweja}
+
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = blue,
+  pdfauthor = {\name},
+  pdfkeywords = {computer science, engineering, software systems, systems},
+  pdftitle = {Resume: \name},
+  pdfsubject = {Resume},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+    letterpaper,
+    body={7.5in, 10.5in},
+    left=0.5in,
+    top=0.3in
+}
+
+%section heading redefine
+\titleformat*{\section}
+{\rmfamily\mdseries\bfseries\large}
+
+% itemseparation
+\setlist[itemize]{itemsep=0.5pt,leftmargin=14pt}
+\setlist[enumerate]{itemsep=0.5pt,leftmargin=14pt}
+
+% Customize page headers
+\pagestyle{fancy}
+\markright{\name}
+\thispagestyle{empty}
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% new commands
+\newcommand{\bi}{\vspace{-1mm}\begin{itemize}[align=left,leftmargin=*, rightmargin=80pt, labelindent=0pt,labelsep=2pt, label={-}, nosep]}
+\newcommand{\ei}{\end{itemize}}
+
+\begin{document}
+
+% Place name at left
+\begin{center}
+{\huge \name}\\
+\href{mailto:bawejakunal15@gmail.com}{bawejakunal15@gmail.com} $|$\hspace{3pt}\href{https://bawejakunal.github.io}{https://bawejakunal.github.io} $|$\hspace{3pt}+1-914-689-5240
+\end{center}
+
+%horizontal line
+\hrule
+\vspace{5pt}
+
+\vspace{-1mm}
+\section*{Professional Experience}
+\begin{itemize}
+
+    \item \textbf{Staff Software Engineer, Reddit Inc. (Chat Discovery \& Distribution)} {\hfill May 2023 - Present}
+    \bi
+        \item Developing Community Chat Recommendations for home feed, chat tab \& discover tab.
+        \item Collaborating with product, data science and engineering teams to drive team's roadmap, strategy and engineering planning.
+    \ei
+    
+    \item \textbf{Staff Software Engineer, Twitter Inc. (Tech Lead, Notifications Product Engineering)} {\hfill Feb 2018 - May 2023}
+    \bi
+      \item Product and infrastructure engineering for News, scheduled reminders, recommended content and direct messages notifications etc.
+      \item A/B testing product and relevance changes for notifications sent out to customers
+      \item Lead team's technical strategy and project prioritizations with a focus on growth and retention of users on Twitter
+      \item Experiment \& Technical design shepherd for product and infra changes across tech stack
+      \item Collaborated with PM, Data Science, Design \& Legal on Notifications product strategy
+      \item Mentored engineers on the org towards technical skills and career growth
+    \ei
+
+    \item \textbf{Software Development Intern, Max2 Inc (Internet Edge Services)} {\hfill Sept 2017 - Dec 2017}
+    \bi
+        \item Developing microservices and applications for edge computing servers processing sensor readings from connected IoT devices.
+    \ei
+
+    \item \textbf{Developer Intern, 1010data Inc (Systems Development Team)} {\hfill Jun 2017 - Aug 2017}
+    \bi
+        \item Developed cache prototype for storing database files on local disks from persistent public cloud storage. It enables on demand computational resource provisioning in cloud.
+    \ei
+\end{itemize}
+
+\vspace{-2mm}
+\section*{Education}
+\begin{itemize}
+    \item \textbf{Columbia University in the City of New York, USA} {\hfill Sept 2016 - Dec 2017}\\
+    MS in Computer Science
+    
+    \item \textbf{Birla Institute of Technology \& Science, Pilani K.K. Birla Goa Campus, India} {\hfill Aug 2011 - May 2015}\\
+    B.E.(Hons.) in Computer Science
+\end{itemize}
+
+
+\vspace{-2mm}
+\section*{Projects \& Publications}
+\begin{enumerate}
+
+    \item \textbf{Hello World: Messaging sans language barriers} [\href{https://devpost.com/software/hello-world-5v89re}{https://devpost.com/software/hello-world-5v89re}] {\hfill Sept 2017}
+    \bi
+        \item Messaging app that transaltes your message's to recipient's language before delivery!
+        \item Technologies used: Google Cloud Platform, Firebase Realtime Database, Text translation API
+    \ei
+
+    \item \textbf{Coverage Based Fault Injection Fuzzing} [\href{https://github.com/akshaynagpal/cbfi}{https://github.com/akshaynagpal/cbfi}] {\hfill Jan 2017 - May 2017}
+    \bi
+        \item Detects security vulnerabilities caused by errors in execution environment of a program by simulating and permuting system call failures and analyzing program response/crash.
+    \ei
+
+    \item \textbf{Frame-Seller} [\href{https://github.com/bawejakunal/Frame-Seller}{https://github.com/bawejakunal/Frame-Seller}] {\hfill Jan 2017 - Apr 2017}
+    \bi
+        \item Cloud based application for selling photographs. Developed and deployed using AWS API Gateway, AWS Lambda, SQS, SNS, Cloudwatch, Swagger and static frontend hosted on AWS S3.
+
+        \item Microservices implemented: email verification, asynchronous order processing and Stripe payments.
+    \ei
+
+    \item \textbf{Sigma Learn - Lecture to Notes} [\href{https://github.com/bawejakunal/Sigma-Learn}{https://github.com/bawejakunal/Sigma-Learn}] {\hfill Jan 2017}
+    \bi
+        \item Converts audio lectures to transcripts and summary in realtime using IBM Watson and Aylien APIs.
+        
+        \item It can be helpful for students with hearing impairments and/or other physical disabilities.
+    \ei
+
+    \item \textbf{A Secure Sharding Protocol for Open Blockchains [Accepted: ACM CCS-2016]} {\hfill Oct 2016}
+    \bi
+
+        \item A distributed agreement protocol for committee based blockchains and scaling transaction rates.
+
+        \item Weblink: \href{http://dl.acm.org/citation.cfm?doid=2976749.2978389}{http://dl.acm.org/citation.cfm?doid=2976749.2978389}
+    \ei
+
+    \item \textbf{Research Intern at TSUNAMi Center, National University of Singapore} {\hfill Jun 2015 - May 2016}
+    \bi
+        \item Research projects on secure filesystems, scaling blockchain transaction rates and defending da
+ta oriented attacks in linux kernel.
+
+        \item Implemented File Inclusion, SQL Injection and XSS tests for a web vulnerability scanner.
+    \ei
+
+\end{enumerate}
+
+\vspace{-2mm}
+\section*{Certifications \& Technical Skills}
+\begin{itemize}
+    \item \textbf{Coursera.org Certifications}
+    \bi
+        \item Python For Everybody by University of Michigan (5 course specialization) \href{https://www.coursera.org/account/accomplishments/specialization/2B5PCJGZ9WEE}{[Certificate Link]}
+
+        \item Machine Learning Foundations by University of Washington \href{https://www.coursera.org/account/accomplishments/certificate/NDVXWMCYKX9N}{[Certificate Link]}
+    \ei
+
+    \item \textbf{Technical Skills}
+    \bi
+        \item Scala, Java, Python, Go, C/C++, GraphQL, Hadoop, JavaScript, HTML, CSS, SQL/NoSQL
+        \item AWS, Google Cloud Platform (GCP), Azure, Docker, Distributed Systems, Microservices
+    \ei
+\end{itemize}
+
+\end{document}\documentclass{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+
+\usepackage[sc]{mathpazo}%removed osf
+
+%text formatting
+\usepackage{textcomp}
+
+%package to draw lines
+\usepackage{tikz}
+
+%fancyhdr to change position of page number
+\usepackage{blindtext}
+\usepackage{fancyhdr}
+
+%enumitem to itemize nicely
+\usepackage{enumitem}
+
+% compact titles
+\usepackage[compact]{titlesec}
+
+% in conjunction with fancyhdr to align page number to bottom right
+\renewcommand{\headrulewidth}{0pt}
+
+% Set your name here
+\def\name{Kunal Baweja}
+
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = blue,
+  pdfauthor = {\name},
+  pdfkeywords = {computer science, engineering, software systems, systems},
+  pdftitle = {Resume: \name},
+  pdfsubject = {Resume},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+    letterpaper,
+    body={7.5in, 10.5in},
+    left=0.5in,
+    top=0.3in
+}
+
+%section heading redefine
+\titleformat*{\section}
+{\rmfamily\mdseries\bfseries\large}
+
+% itemseparation
+\setlist[itemize]{itemsep=0.5pt,leftmargin=14pt}
+\setlist[enumerate]{itemsep=0.5pt,leftmargin=14pt}
+
+% Customize page headers
+\pagestyle{fancy}
+\markright{\name}
+\thispagestyle{empty}
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% new commands
+\newcommand{\bi}{\vspace{-1mm}\begin{itemize}[align=left,leftmargin=*, rightmargin=80pt, labelindent=0pt,labelsep=2pt, label={-}, nosep]}
+\newcommand{\ei}{\end{itemize}}
+
+\begin{document}
+
+% Place name at left
+\begin{center}
+{\huge \name}\\
+\href{mailto:bawejakunal15@gmail.com}{bawejakunal15@gmail.com} $|$\hspace{3pt}\href{https://bawejakunal.github.io}{https://bawejakunal.github.io} $|$\hspace{3pt}+1-914-689-5240
+\end{center}
+
+%horizontal line
+\hrule
+\vspace{5pt}
+
+\vspace{-1mm}
+\section*{Professional Experience}
+\begin{itemize}
+
+    \item \textbf{Staff Software Engineer, Reddit Inc. (Chat Discovery \& Distribution)} {\hfill May 2023 - Present}
+    \bi
+        \item Developing Community Chat Recommendations for home feed, chat tab \& discover tab.
+        \item Collaborating with product, data science and engineering teams to drive team's roadmap, strategy and engineering planning.
+    \ei
+    
+    \item \textbf{Staff Software Engineer, Twitter Inc. (Tech Lead, Notifications Product Engineering)} {\hfill Feb 2018 - May 2023}
+    \bi
+      \item Product and infrastructure engineering for News, scheduled reminders, recommended content and direct messages notifications etc.
+      \item A/B testing product and relevance changes for notifications sent out to customers
+      \item Lead team's technical strategy and project prioritizations with a focus on growth and retention of users on Twitter
+      \item Experiment \& Technical design shepherd for product and infra changes across tech stack
+      \item Collaborated with PM, Data Science, Design \& Legal on Notifications product strategy
+      \item Mentored engineers on the org towards technical skills and career growth
+    \ei
+
+    \item \textbf{Software Development Intern, Max2 Inc (Internet Edge Services)} {\hfill Sept 2017 - Dec 2017}
+    \bi
+        \item Developing microservices and applications for edge computing servers processing sensor readings from connected IoT devices.
+    \ei
+
+    \item \textbf{Developer Intern, 1010data Inc (Systems Development Team)} {\hfill Jun 2017 - Aug 2017}
+    \bi
+        \item Developed cache prototype for storing database files on local disks from persistent public cloud storage. It enables on demand computational resource provisioning in cloud.
+    \ei
+\end{itemize}
+
+\vspace{-2mm}
+\section*{Education}
+\begin{itemize}
+    \item \textbf{Columbia University in the City of New York, USA} {\hfill Sept 2016 - Dec 2017}\\
+    MS in Computer Science
+    
+    \item \textbf{Birla Institute of Technology \& Science, Pilani K.K. Birla Goa Campus, India} {\hfill Aug 2011 - May 2015}\\
+    B.E.(Hons.) in Computer Science
+\end{itemize}
+
+
+\vspace{-2mm}
+\section*{Projects \& Publications}
+\begin{enumerate}
+
+    \item \textbf{Hello World: Messaging sans language barriers} [\href{https://devpost.com/software/hello-world-5v89re}{https://devpost.com/software/hello-world-5v89re}] {\hfill Sept 2017}
+    \bi
+        \item Messaging app that transaltes your message's to recipient's language before delivery!
+        \item Technologies used: Google Cloud Platform, Firebase Realtime Database, Text translation API
+    \ei
+
+    \item \textbf{Coverage Based Fault Injection Fuzzing} [\href{https://github.com/akshaynagpal/cbfi}{https://github.com/akshaynagpal/cbfi}] {\hfill Jan 2017 - May 2017}
+    \bi
+        \item Detects security vulnerabilities caused by errors in execution environment of a program by simulating and permuting system call failures and analyzing program response/crash.
+    \ei
+
+    \item \textbf{Frame-Seller} [\href{https://github.com/bawejakunal/Frame-Seller}{https://github.com/bawejakunal/Frame-Seller}] {\hfill Jan 2017 - Apr 2017}
+    \bi
+        \item Cloud based application for selling photographs. Developed and deployed using AWS API Gateway, AWS Lambda, SQS, SNS, Cloudwatch, Swagger and static frontend hosted on AWS S3.
+
+        \item Microservices implemented: email verification, asynchronous order processing and Stripe payments.
+    \ei
+
+    \item \textbf{Sigma Learn - Lecture to Notes} [\href{https://github.com/bawejakunal/Sigma-Learn}{https://github.com/bawejakunal/Sigma-Learn}] {\hfill Jan 2017}
+    \bi
+        \item Converts audio lectures to transcripts and summary in realtime using IBM Watson and Aylien APIs.
+        
+        \item It can be helpful for students with hearing impairments and/or other physical disabilities.
+    \ei
+
+    \item \textbf{A Secure Sharding Protocol for Open Blockchains [Accepted: ACM CCS-2016]} {\hfill Oct 2016}
+    \bi
+
+        \item A distributed agreement protocol for committee based blockchains and scaling transaction rates.
+
+        \item Weblink: \href{http://dl.acm.org/citation.cfm?doid=2976749.2978389}{http://dl.acm.org/citation.cfm?doid=2976749.2978389}
+    \ei
+
+    \item \textbf{Research Intern at TSUNAMi Center, National University of Singapore} {\hfill Jun 2015 - May 2016}
+    \bi
+        \item Research projects on secure filesystems, scaling blockchain transaction rates and defending da
+ta oriented attacks in linux kernel.
+
+        \item Implemented File Inclusion, SQL Injection and XSS tests for a web vulnerability scanner.
+    \ei
+
+\end{enumerate}
+
+\vspace{-2mm}
+\section*{Certifications \& Technical Skills}
+\begin{itemize}
+    \item \textbf{Coursera.org Certifications}
+    \bi
+        \item Python For Everybody by University of Michigan (5 course specialization) \href{https://www.coursera.org/account/accomplishments/specialization/2B5PCJGZ9WEE}{[Certificate Link]}
+
+        \item Machine Learning Foundations by University of Washington \href{https://www.coursera.org/account/accomplishments/certificate/NDVXWMCYKX9N}{[Certificate Link]}
+    \ei
+
+    \item \textbf{Technical Skills}
+    \bi
+        \item Scala, Java, Python, Go, C/C++, GraphQL, Hadoop, JavaScript, HTML, CSS, SQL/NoSQL
+        \item AWS, Google Cloud Platform (GCP), Azure, Docker, Distributed Systems, Microservices
+    \ei
+\end{itemize}
+
+\end{document}
